@@ -8,7 +8,7 @@ export default function CategoryTabs() {
   ];
 
   return (
-    <div className="flex gap-2 mb-4 flex-wrap">
+    <div className="flex gap-2 mb-4 flex-wrap bg-white p-4 rounded-2xl shadow">
       {tabs.map((tab, i) => (
         <button
           key={i}

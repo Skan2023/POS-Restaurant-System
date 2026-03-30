@@ -2,8 +2,7 @@ import { Coffee, Beer, Utensils, Croissant } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <div className="w-20 bg-white flex flex-col items-center py-4 shadow">
-      <h1 className="font-bold text-orange-500 mb-6">POS</h1>
+    <div className="w-20 bg-white flex flex-col items-center rounded-2xl py-4 shadow">
 
       <div className="flex flex-col gap-6">
         <SidebarItem icon={<Coffee />} active />
