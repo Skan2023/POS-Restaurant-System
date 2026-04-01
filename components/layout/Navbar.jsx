@@ -1,5 +1,6 @@
 import { Bell } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -8,12 +9,12 @@ export default function Navbar() {
 
       <div className="flex items-center gap-4">
         <div className="flex gap-6 text-gray-600">
-          <p>Home</p>
-          <p>Orders</p>
-          <p>Customers</p>
-          <p>Cashier</p>
+          <Link className="py-2 px-4 hover:bg-orange-500 hover:text-white rounded-full transition-all" href="/">Home</Link>
+          <Link className="py-2 px-4 hover:bg-orange-500 hover:text-white rounded-full transition-all" href="/orders">Orders</Link>
+          <Link className="py-2 px-4 hover:bg-orange-500 hover:text-white rounded-full transition-all" href="/customers">Customers</Link>
+          {/* <Link href="/cashier">Cashier</Link> */}
         </div>
-        <Button className="bg-orange-500 rounded-full">New Order</Button>
+        <Button className="py-2 px-4 bg-orange-500 rounded-full">New Order</Button>
         <Bell />
         <div className="w-8 h-8 bg-black text-white flex items-center justify-center rounded-full">
           A

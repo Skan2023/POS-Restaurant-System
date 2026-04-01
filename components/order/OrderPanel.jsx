@@ -43,6 +43,7 @@ export default function OrderPanel() {
       <div className="mt-4 border-t pt-3">
         <p className="font-bold">Total: ${total}</p>
 
+        <button className="mt-3 w-full border border-gray-300 py-2 rounded-lg">Print Invoice</button>
         <button className="mt-3 w-full bg-green-500 text-white py-2 rounded-lg">
           Payments
         </button>
